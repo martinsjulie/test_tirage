@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+   <title>
+     Introduction à Javascript
+   </title>
+   <meta charset="utf-8">
+   <meta name="description" content="Intro JS" />
+</head>
+
+<body>
+<!--
+<table>
+      <tr>
+        <th>"Quel est ton nom ?"<th><td id="name"></td>
+      </tr>
+      <tr>
+        <th>"Qu'est-ce donc que tu veux faire ichi, crédiou ?"</th><td id="quest"></td>
+      </tr>
+        <tr>
+        <th> "Le monde a besoin de connaitre ta couleur préférée"</th><td id="colour"></td>
+      </tr>
+</table>
+
+<label>Name:</label><input id="inputName" type="text">
+<label>Quest:</label><input id="inputQuest" type="text">
+<label>Colours:</label><input id="inputColour" type="text">
+-->
+
+  <button onclick="ask();"> Qui a le precieux?</button>
+  <p id="choisi"></p>
+  <script language="javascript">
+
+  var eleves = ["BULTEZ Jordan", "BRUCHET Daniel", "CAPRON Axel", "CAUVEZ Thimoty",
+   "DELISSE Manon", "DELPIERRE Michel", "FLORE Antoine", "FONTAINE François",
+    "GIACCO Raphael", "GROUX Baptiste", "HURBAIN Jessy", "MACIEJEWSKI Jessica",
+     "MARTINS Julie","MATEYAK Paul", "MONSERGENT François", "POURRIOT Quentin",
+      "PROVO Kilian", "SCRUFARI Pietro", "TOMCZAK Kévin", "TOURNEUR Tristan",
+      "VERGNE Victor", "VINCENT Simon", "ZAREMBA Victor", "LI Jin Hao"];
+      function randomChiffreFunction(min,max) {
+        return Math.floor(Math.random() * (max - min) + min);
+      }
+      function ask(){
+        randomChiffre = randomChiffreFunction(0,23);
+        document.getElementById("choisi").innerHTML = eleves[randomChiffre];
+
+      }
+
+</script>
+
+
+</body>
+
+</html>
